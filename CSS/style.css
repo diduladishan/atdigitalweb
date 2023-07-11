@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+/* Global Variables */
+:root {
+  --purple-color: #6b3cc9;
+  --orange-color: #f28d35;
+  --pink-color: rgb(229, 126, 238);
+  --white: #ffffff;
+  --black-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Navbar Color */
+.main-navbar {
+  background-color: var(--purple-color);
+}
+
+/* Small Image Logo */
+.image-logo {
+  width: 47px;
+  height: 37px;
+}
+
+/* Text logo */
+.text-logo {
+  width: 160px;
+}
+
+/* Navigation Links */
+.nav-link {
+  font-style: medium;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Inter", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--orange-color);
+}
+
+.hero-bg {
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+  background: url("../assets/hero-image.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-description {
+  background: linear-gradient(256.73deg, #1cbddd 27.86%, #4dca79 100%);
+  padding: 30px;
+  position: absolute;
+  bottom: 10%;
+  left: 100px;
+}
+
+.main-title {
+  font-weight: bold;
+  color: var(--white);
+  font-size: 48px;
+  line-height: 50px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  letter-spacing: -2%;
+}
+
+.hero-button {
+  background: var(--orange-color);
+  color: var(--white);
+  padding: 12px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-button:hover {
+  color: var(--purple-color);
+}
+
+.web-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--purple-color);
+}
+
+.web-paragraph {
+  color: var(--black-color);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.app-button {
+  background: var(--orange-color);
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.app-button:hover {
+  color: var(--purple-color);
+}
+
+.footer-section {
+  background: var(--purple-color);
+}
+
+.footer-paragraph {
+  font-family: "Lato", sans-serif;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.technology-title {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  line-height: 25px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.break-line {
+  width: 60%;
+  color: var(--white);
+  margin: 0 auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .hero-bg {
+    background-size: cover;
+    background-position: top;
+    height: 70vh;
+    width: 100vw;
+  }
+  .hero-description {
+    padding: 20px;
+    bottom: 5%;
+    left: 60px;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  .hero-bg {
+    background-size: cover;
+    background-position: top;
+    height: 60vh;
+    width: 100vw;
+  }
+  .hero-description {
+    padding: 20px;
+    bottom: -10%;
+    left: 0%;
+  }
+  .main-title {
+    font-size: 40px;
+  }
+
+  .main-title br {
+    display: none;
+  }
+
+  .web-paragraph br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-bg {
+    background-size: 100%;
+    background-position: top;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .hero-description {
+    padding: 20px;
+    width: 100vw;
+    left: 0;
+    bottom: -90px;
+  }
+
+  .break-line {
+    width: 90%;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  .main-title br {
+    display: none;
+  }
+
+  .web-paragraph br {
+    display: none;
+  }
+
+  .web-title {
+    font-size: 23px;
+  }
+
+  .web-paragraph {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-bg {
+    background-size: 100%;
+    background-position: top;
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .hero-description {
+    padding: 20px;
+    left: 0;
+    bottom: -110px;
+  }
+
+  .web-title {
+    font-size: 27px;
+  }
+
+  .main-title {
+    font-size: 30px !important;
+    line-height: 30px;
+  }
+
+  .break-line {
+    width: 100%;
+  }
+
+  .footer-paragraph {
+    line-height: 25px;
+  }
+
+  .footer-paragraph br {
+    display: none;
+  }
+
+  .web-paragraph br {
+    display: none;
+  }
+}
